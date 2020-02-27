@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tip Calculator - DOM</title>
+</head>
+<body>
+    <h1>JavaScript Tip Calculator</h1>
+
+    <form action="/" method="POST">
+        Bill Amount: <input type="number" name="bill" id="bill">
+        <br>
+        Tip Amount: <input type="range" name="tipAmount" id="tipAmount" onchange="tipCalculator(this.value, 'bill')" 
+        min="5" max="20" value="5">
+        <br>
+    </form>
+    <div id="display">
+
+    </div>
+</body>
+<script type="text/javascript" src="tip-calculator-DOM.js"></script>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="tip-calculator-v2.js"></script>
+    <link rel="stylesheet" href="tip-calculator-v2.css">
+</head>
+<body>
+    <fieldset>
+        <form onchange="calculate()">
+            <label for="billAmount">What is the bill amount? ($)</label>
+            <input type="number" name="billAmount" id="billAmount"/> <br>
+            <label for="tipRate">What is the tip rate? (%)</label>
+            <input type="range" min="5" value="5" max="20" step="1" name="tipRate" 
+            onchange="rangevalue.value=value" id="tipRate"/>
+            <output id="rangevalue">5</output> <br>
+            <label for="tipRound"> Tip: ($)</label>
+            <input type="text" name="tipRound" id="tipRound" readonly/> <br>
+            <label for="total">Total: ($)</label> 
+            <input type="text" name="total" id="total" readonly/> <br>
+            <input type="reset" value="Delete">
+        </form>
+    </fieldset>
+</body>
+</html>
