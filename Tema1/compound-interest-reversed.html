@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="compound-interest-reversed.js" type="text/javascript"></script>
+    <title>Compound interest calculator - reversed</title>
+</head>
+<body>
+    <h1>Compound interest calculator - reversed</h1>
+    <form>
+        <label for="result">Returned amount</label> <br>
+        <input type="number" id="result"> <br>
+
+        <label for="rate">Rate of interest</label> <br>
+        <input type="number" id="rate"> <br>
+        
+        <label for="period">Period (years)</label> <br>
+        <input type="number" id="period"><br>
+        
+        <label for="compounded">Interest compounded per year (times)</label> <br>
+        <input type="number" id="compounded"><br> 
+        
+        <button type="button" id="calculate"onclick="calculatePrincipal()">Calculate</button>
+    </form>
+    <div id="principal"></div>
+    </div>
+    <link rel="stylesheet" href="style.css">
+</body>
+</html>

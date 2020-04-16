@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="compound-interest.js" type="text/javascript"></script>
+    <title>Compound interest calculator</title>
+</head>
+<body>
+    <h1>Compound interest calculator</h1>
+    <form>
+        <label for="principal">Principal amount</label><br>
+        <input type="number" id="principal" onkeyup="calculateInterest()"><br>
+
+        <label for="rate">Rate of interest</label><br>
+        <input type="number" id="rate" onkeyup="calculateInterest()"><br>
+        
+        <label for="period">Period (years)</label><br>
+        <input type="number" id="period" onkeyup="calculateInterest()"><br>
+        
+        <label for="compounded">Interest compounded per year (times)</label><br>
+        <input type="number" id="compounded" onkeyup="calculateInterest()"><br>
+        
+        <button type="button" id="calculate"onclick="calculateInterest()">Calculate</button>
+    </form>
+    <div id="result"></div>
+
+    <link rel="stylesheet" href="style.css">
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="simple-interest.js"></script>
+    <title>Simple interest rate calculator</title>
+</head>
+<body>
+    <h1>Simple interest rate calculator</h1>
+    <form>
+        <label for="principal">Principal amount</label> <br>
+        <input type="number" id="principal"> <br>
+        
+        <label for="rate">Rate of interest</label> <br>
+        <input type="number" id="rate"> <br>
+        
+        <label for="period">Period (years)</label> <br>
+        <input type="number" id="period"><br>
+        
+        <button type="button" id="calculate"onclick="getValues()">Calculate</button>
+    </form>
+    <div id="result"></div>
+
+    <link rel="stylesheet" href="style.css">
+</body>
+</html>

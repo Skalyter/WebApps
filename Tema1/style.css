@@ -1,0 +1,21 @@
+body{
+    margin-top: 150px;
+    background-color: snow;
+    text-align:  center;
+}
+
+form {
+    display: inline;
+    text-align:  left;
+}
+
+input, label, button {
+width: 250px;
+border-width: 1px;
+padding: 4px;
+margin: 8px;
+}
+
+input{
+    margin-bottom: 30px;
+}
