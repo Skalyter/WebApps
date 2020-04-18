@@ -6,7 +6,6 @@ function calculateMonths() {
     let numberOfMonths = 0;
     do {
         balance = prompt("What is your balance?", 5000);
-
     } while (isNaN(balance));
     do {
         apr = prompt("What is the APR on the card? (As a percent, NOT decimal", 12);
@@ -29,10 +28,10 @@ function calculateMonths() {
     console.log(`apr = ${apr} payment = ${monthlyPayment}, balance = ${balance}, months=${numberOfMonths}`)
 }
 
-function calculateMonthsUntilPaidOff(balance, apr, monthlyPayment) {
-    return Math.ceil((-1) / 30 * (Math.log(1 + balance / monthlyPayment * (1 - Math.pow(1 + apr, 30))) / Math.log(1 + apr)));
+function calculateMonthsUntilPaidOff(b, i, p) {
+    return Math.ceil((-1) / 30 * (Math.log(1 + b / p * (1 - Math.pow(1 + i, 30))) / Math.log(1 + i)));
 }
 
-function calculateAmountToPayPerMonth(balance, apr, numberOfMonths) {
-    return Math.trunc(((balance * (1 - Math.pow(1 + apr, 30))) / (Math.pow(1 / 10, 30 * Math.log(1 + apr) * numberOfMonths) - 1)), -2);
+function calculateAmountToPayPerMonth(b, i, n) {
+    return Math.ceil((-b + b * Math.pow((1 + i), 30)) / (1 - Math.pow((1 + i), (-30 * n))));
 }
